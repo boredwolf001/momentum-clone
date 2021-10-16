@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+
+.container {
+  user-select: none;
+  user-zoom: unset;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.time-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.time {
+  font-size: 150px;
+}
+
+.welcome-msg {
+  margin-top: -20px;
+  display: block;
+  font-size: 50px;
+}
+
+.name {
+  font-family: inherit;
+  font-size: inherit;
+  width: 200px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+}
+
+.name:focus {
+  border-bottom: 4px solid #fff;
+}
+
+.quote-container {
+  position: absolute;
+  bottom: 10px;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.quote-text {
+  font-size: 17px;
+}
+
+.quote-container:hover {
+  transform: translateY(-10px);
+}
+.quote-container:hover .quote-author {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.quote-author {
+  font-size: 14px;
+  transform: translateY(-15px);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
